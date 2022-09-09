@@ -1,0 +1,112 @@
+﻿Tipos de datos numéricos y operadores matemáticos
+
+
+1-)  Área de cuadrado;
+
+Console.WriteLine("Bienvenido a esta aplicacion para calcular el area de un cuadrado");
+Console.WriteLine();
+//Se demostrará cómo calcular el area de un cuadrado
+Console.Write("Digite la medida de los lados del cuadrado: ");
+double lado = double.Parse(Console.ReadLine());
+double area = lado * lado;
+Console.Write("El área del cuadrado es: " + area + "cm²");
+Console.ReadKey();
+
+2-) Área de rectángulo;
+Console.WriteLine("Bienvenido, determinaremos el area de un rectangulo");
+//Recuerda que el area de un rectangulo es: Base*altura
+Console.WriteLine();
+Console.Write("Digite la base del rectangulo:"); 
+double base_b = double.Parse(Console.ReadLine());
+Console.Write("Digite la altura del rectangulo:");
+double altura = double.Parse(Console.ReadLine());
+double area = base_b * altura;
+Console.WriteLine("La area del rectangulo es: " + area + "m²");
+Console.ReadKey();
+// Recuerda que alt+253= ²
+
+
+3-) Área de triangulo;
+Console.WriteLine("Bienvenido, ahora se determinara el area de un triangulo");
+Console.WriteLine();
+// La formula para el area de un triagulo es= Base*altura/2
+Console.Write("Digite la base del triangulo:");
+double base_b = double.Parse(s:Console.ReadLine());
+Console.Write("Digite la altura del triangulo:");
+double altura = double.Parse(s:Console.ReadLine());
+double area = (base_b * altura) / 2;
+Console.Write("El área del triángulo es:"+ area + "cm²");
+Console.ReadKey();
+// alt+253= ²
+
+
+4-) Área de trapecio:
+// Se calculara el area de un Trapecio,recordar que el area de un trapecio es igual a: Base + Base * altura/2
+Console.Write("Digite la primera base del trapecio ");
+int base_t1 = int.Parse(Console.ReadLine());
+Console.Write("Digite la segunda base del trapecio: ");
+int base_t2 = int.Parse(Console.ReadLine());
+Console.Write("Introduzca la altura del trapecio: ");
+int altura = int.Parse(Console.ReadLine());
+double area = ((base_t1 + base_t2) * altura / 2);
+Console.Write("El área del trapecio es:" + area + "cm²");
+Console.ReadKey();
+
+
+5-) Área de hexágono;
+//Se calculará el area de un hexagono.
+Console.WriteLine("Bienvenidos, antes de buscar el area de un hexagono, se debe buscar el perimetro");
+// el area de un hexagono es: Perimetro * apotema/2 y perimetro es igual a: Lados* 6 ( seis es el numero de lados del hexagono)
+Console.WriteLine();
+Console.Write("Digite la medida de los lados del hexagono: ");
+int lado = int.Parse(Console.ReadLine());
+int perimetro = (lado * 6);
+Console.WriteLine("El perimetro del hexagono es: " + perimetro);
+Console.WriteLine();
+Console.Write(" Para encontrar el area digite la apotema del hexagono: ");
+int apotema = int.Parse(Console.ReadLine());
+double area = ((perimetro * apotema) / 2);
+Console.Write("El área del hexágono es:"+ area + "cm²");
+Console.ReadKey();
+
+
+6-) Área de círculo;
+//calculemos el area de un circulo
+Console.WriteLine("Bienvenido, calcularemos el area de un circulo");
+Console.WriteLine();
+//Recordar que el area de un circulo es: PI * r²
+double PI = 3.1416;
+Console.Write("Digite el radio del circulo: ");
+int radio = int.Parse(Console.ReadLine());
+double area = radio * radio * PI;
+Console.Write("El área su círculo será: " + area + "cm²");
+Console.ReadKey();
+
+
+7-) Área de elipse;
+// Se va a calcular el area de una elipse 
+Console.WriteLine("Bienvenido, se calculará el area de un elipse");
+Console.WriteLine();
+//El area de un eclipse es: PI * radio mayor * radio menor
+double PI = 3.1416;
+Console.WriteLine("Digite el valor del radio mayor de la elipse ");
+int radio_mayor =int.Parse(Console.ReadLine());
+Console.WriteLine();
+Console.Write("Digite el valor del radio menor de la elipse ");
+int radio_menor=int.Parse(Console.ReadLine());
+double area = PI * radio_mayor * radio_menor;
+Console.WriteLine("El area de tu elipse será" + area + "cm²");
+Console.ReadKey();
+
+
+8-) Hipotenusa utilizando el teorema de Pitágoras:
+//Encontraremos la hipotenusa usando el teorema de pitagoras
+Console.Write("Saludos, encontraremos la hipotenusa usando el teorema de pitagoras");
+Console.WriteLine();
+Console.Write("Digite el primer cateto del triángulo rectangulo : ");
+double cat1 = double.Parse(Console.ReadLine());
+Console.Write("Digite el segundo cateto del triangulo: ");
+double cat2 = double.Parse(Console.ReadLine());
+double hipotenusa = Math.Sqrt((cat1 * cat1) + (cat2 * cat2));
+Console.Write("La hipotenusa del triangulo rectangulo es: " + hipotenusa + "cm");
+Console.ReadKey();
